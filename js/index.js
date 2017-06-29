@@ -124,6 +124,45 @@ function displayExpression(a, b, r, chaos, isCorrect,randomOp) {
 
 }
 
+$(document).ready(function() {
+    $(this).keypress(function(event) {
+        if (event.keyCode == 84) {
+          progressBar.stop();
+  // ATTENTION TO THIS: Cross can also be the right answer.
+  if (isCorrect) {
+    score += 1;
+    console.log("correct answer");
+    runPlayerTurn();
+  } else {
+    // exit the game? do nothing?
+    wrongAnswer = true;
+    console.log("incorrect answer");
+    restart();
+  }
+        }
+    });
+})
+
+
+
+
+
+$(document).ready(function() {
+    $(this).keypress(function(event) {
+        if (event.keyCode == 70) {
+           progressBar.stop();
+  // ATTENTION TO THIS: Cross can also be the right answer.
+  if (!isCorrect) {
+    score += 1;
+    runPlayerTurn();
+  } else {
+    // exit the game? do nothing?
+    wrongAnswer = true;
+    restart();
+  }
+        }
+    });
+})
 
 
 function restart() {
