@@ -18,6 +18,8 @@
 <body>
   <div class="container-fluid text-center">
     <div id="display" class="well col-xs-6">
+      <p style="font-size:12px;width:350px">Fast ~~~~~~~~~~~~~~~~~~~Medium~~~~~~~~~~~~~~~ Slow</p>
+      <input type="range" id="speed" min="50" max="500" step="11">
       <div id="try-screen">
         <p id="try">Try Again</p>
         
