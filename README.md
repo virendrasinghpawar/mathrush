@@ -1,3 +1,3 @@
 # mathrush
 math quiz to check how fast you are
-app is live at => https://mathrush.herokuapp.com/
+app is live  <a href ="https://mathrush.herokuapp.com/" target="_blank">here</a>
