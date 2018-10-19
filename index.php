@@ -17,8 +17,7 @@
 </head>
 <body>
   <div class="container-fluid text-center">
-    <p> i change something for heroku auto deploy</p>
-    <p> i change something for heroku auto deploy</p>
+    
     <div id="display" class="well col-xs-6">
       <p style="font-size:12px;width:350px">Fast ~~~~~~~~~~~~~~~~~~~Medium~~~~~~~~~~~~~~~ Slow</p>
       <input type="range" id="speed" min="50" max="500" step="11">
